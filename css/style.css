@@ -270,16 +270,18 @@ body {
   margin-bottom: 35px;
 }
 
-.items-box:nth-child(1) a  {
+.items-box:nth-child(1) a {
   position: relative;
   display: block
 }
+
 .items-box:nth-child(1) a h3 {
   position: relative;
   display: block;
   font-size: 25px;
   color: #fff;
 }
+
 .items-box:nth-child(1) a p {
   position: relative;
   display: block;
@@ -289,35 +291,40 @@ body {
 }
 
 /* 슬라이드 넣기 */
-.items-box:nth-child(2) {  
-}
+.items-box:nth-child(2) {}
 
 .sw-items {
   width: 100%;
   height: 100%;
 }
+
 .sw-items .swiper-slide a {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .items-1 {
   background: url('../images/mb02_bg.jpg') no-repeat center;
   background-size: cover;
 }
+
 .items-2 {
   background: url('../images/mb03_bg.jpg') no-repeat center;
   background-size: cover;
 }
+
 .items-3 {
   background: url('../images/mb04_bg.jpg') no-repeat center;
   background-size: cover;
 }
+
 .items-4 {
   background: url('../images/mb05_bg.jpg') no-repeat center;
   background-size: cover;
 }
+
 .items-5 {
   background: url('../images/mb06_bg.jpg') no-repeat center;
   background-size: cover;
@@ -336,7 +343,8 @@ body {
   border: 0;
   cursor: pointer;
 }
-.sw-items-next {  
+
+.sw-items-next {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -371,15 +379,14 @@ body {
 }
 
 .sw-items-pg .swiper-pagination-bullet-active {
-  width: 30px; 
-  background-color: hotpink; 
+  width: 30px;
+  background-color: hotpink;
   opacity: 1;
 }
 
 
 /* 링크 */
-.items-box:nth-child(3) {
-}
+.items-box:nth-child(3) {}
 
 .items-box:nth-child(3) a {
   position: relative;
@@ -390,11 +397,11 @@ body {
   text-align: center;
 }
 
-.items-box:nth-child(3) a:first-child{
+.items-box:nth-child(3) a:first-child {
   background: #f3f3f3 url('../images/franchise_ico01.png') no-repeat center 60px;
 }
 
-.items-box:nth-child(3) a:last-child{
+.items-box:nth-child(3) a:last-child {
   background: #fff url('../images/franchise_ico02.png') no-repeat center 60px;
 }
 
@@ -420,9 +427,7 @@ body {
 }
 
 
-.items-box:nth-child(4) {
-  
-}
+.items-box:nth-child(4) {}
 
 .search-left {
   position: relative;
@@ -533,6 +538,7 @@ body {
   .items-box {
     width: 100%;
   }
+
   .items-box:nth-child(3) a p {
     font-size: 16px;
   }
@@ -551,8 +557,9 @@ body {
 
 .bevarage-top {
   position: relative;
-  display: block;  
+  display: block;
 }
+
 .bevarage-top h2 {
   font-size: 40px;
   color: #000;
@@ -563,6 +570,7 @@ body {
 .bevarage-top h2 b {
   font-weight: 500;
 }
+
 .bevarage-top span {
   position: relative;
   display: block;
@@ -571,6 +579,7 @@ body {
   color: #666;
   margin-top: 10px;
 }
+
 /* Bevarage 슬라이드 */
 .sw-bevarage {
   width: 100%;
@@ -581,6 +590,7 @@ body {
   position: relative;
   display: block;
 }
+
 .sw-bevarage a img {
   width: 100%;
   height: auto;
@@ -626,10 +636,12 @@ body {
   display: block;
   z-index: 9;
 }
+
 .sw-bevarage-pg {
   font-size: 12px;
   color: #000;
 }
+
 .sw-bevarage-pg .swiper-pagination-current {
   font-weight: 600;
 }
@@ -638,15 +650,19 @@ body {
   .bevarage {
     padding: 10vw 0;
   }
+
   .bevarage-top h2 {
     font-size: 30px;
   }
+
   .bevarage-top span {
     font-size: 15px;
   }
+
   .sw-bevarage {
     height: 56vw;
   }
+
   .sw-bevarage-prev,
   .sw-bevarage-next {
     width: 5.5vw;
@@ -658,7 +674,94 @@ body {
 .franchiser {
   position: relative;
   display: block;
+  background: url('../images/main-store-bg.png') no-repeat center;
+  background-size: cover;
+  padding: 100px 0;
 }
+
+.franchiser .inner {}
+
+.franchiser-top h2 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #69ccd0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.franchiser-top h2 b {
+  font-weight: 500;
+}
+
+.franchiser-top span {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.franchiser-list {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+}
+.franchiser-list li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 24%;
+  margin-right: 1.3%;
+}
+.franchiser-list li:last-child {
+  margin-right: 0;
+}
+.franchiser-list li a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.franchiser-list li a img {
+  width: auto;
+  height: 324px;
+}
+.franchiser-list li a span {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+/* 프렌차이즈 반응형 영역 */
+@media all and (max-width: 1000px) {
+  
+  .franchiser {
+    padding: 10vw 0;
+  }
+
+  .franchiser-list {
+    margin-top: 4vw;
+  }
+
+  .franchiser-list li a img {
+    height: 324px;
+  }
+
+  .franchiser-list li a span {
+    margin-top: 2vw;
+  }
+
+  .franchiser-top h2 {
+    font-size: 30px;
+  } 
+  .franchiser-top span {
+    font-size: 13px;
+    white-space: nowrap;
+    margin-top: 2vw;
+  }
+}
+
 
 /* sns */
 .sns {
