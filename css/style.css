@@ -57,6 +57,198 @@ body {
   clear: both;
 }
 
+/* 위로가기 */
+.gotop {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/top.png') no-repeat center;
+  background-size: cover;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* 모바일 메뉴 */
+.mb-bt {
+  position: fixed;
+  left: 20px;
+  top: 30px;
+  display: none;
+  width: 22px;
+  height: 21px;
+  z-index: 99997;
+}
+
+.mb-bt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #51504e;
+}
+
+.mb-bt span {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #51504e;
+}
+
+.mb-bt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #51504e;
+}
+
+/* 모바일 가림막 */
+.mb-dim {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9998;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 모바일 메뉴내용 */
+.mb-wrap {
+  position: fixed;
+  left: -320px;
+  top: 0;
+  display: block;
+  z-index: 99999;
+  width: 320px;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.5s;
+}
+
+.mb-wrap-open {
+  left: 0;
+}
+
+.mb-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  width: 22px;
+  height: 21px;
+  background: url('../images/btn_close2.png') no-repeat center;
+  z-index: 9;
+}
+
+.mb-sns {
+  position: relative;
+  display: block;
+  padding: 20px 20px;
+}
+
+.mb-sns-list {
+  position: relative;
+  display: block;
+}
+
+.mb-sns-list li {
+  position: relative;
+  display: blocyk;
+  float: left;
+  margin-right: 5px;
+}
+
+.mb-sns-list li a {
+  position: relative;
+  display: block;
+}
+
+.mb-menu {
+  position: relative;
+  display: block;
+}
+
+.mb-menu>li {
+  position: relative;
+  display: block;
+
+  border-bottom: 1px solid #eee;
+}
+
+.mb-menu>li>a {
+  position: relative;
+  display: block;
+  line-height: 50px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.mb-menu>li>a::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 13px;
+  height: 9px;
+  background: url('../images/lnb_bl.png') no-repeat center;
+  transition: transform 0.5s;
+}
+
+.mb-icon-rot::after {
+  transform: translateY(-50%) rotate(180deg) !important;
+}
+
+/* 포커스 유지 */
+.mb-menu-focus {
+  color: #4abbc3 !important;
+}
+
+/* .mb-menu > li:hover > a {
+  color: #4abbc3;
+}
+.mb-menu > li:hover .mb-submenu {
+  display: block;
+} */
+
+.mb-submenu {
+  position: relative;
+  display: none;
+  background-color: #f2f2f2;
+}
+
+.mb-submenu li {
+  position: relative;
+  display: block;
+}
+
+.mb-submenu li a {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #888;
+  line-height: 40px;
+  padding-left: 30px;
+}
+
 /* 고정메뉴 */
 .fix-menu {
   position: fixed;
@@ -90,7 +282,7 @@ body {
   position: relative;
   display: block;
   z-index: 9999;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-fix {
@@ -100,10 +292,11 @@ body {
   width: 100%;
 }
 
-.header .inner {   
+.header .inner {
   max-width: 1200px;
   background-color: #fff;
 }
+
 .header .inner::before {
   content: '';
   position: absolute;
@@ -217,7 +410,8 @@ body {
   vertical-align: top;
   padding: 0 40px;
 }
-.menu>li:last-child{
+
+.menu>li:last-child {
   padding-right: 0;
 }
 
@@ -234,7 +428,7 @@ body {
   position: relative;
   display: block;
   padding: 20px 0;
-  
+
 }
 
 .submenu li {
@@ -251,49 +445,67 @@ body {
   color: #999;
 }
 
-@media all and (max-width:1080px) {  
+@media all and (max-width:1080px) {
   .menu>li {
     padding: 0 30px;
   }
 }
-@media all and (max-width: 960px) {  
+
+@media all and (max-width: 960px) {
   .menu>li {
     padding: 0 20px;
   }
 }
-@media all and (max-width: 850px) { 
+
+@media all and (max-width: 850px) {
   .logo {
     width: 140px;
-  }   
+  }
+
   .menu>li>a {
     font-size: 16px;
   }
+
   .submenu li a {
     font-size: 13px;
   }
 }
 
-@media all and (max-width: 760px) {   
+@media all and (max-width: 760px) {
   .menu>li {
     padding: 0 15px;
   }
+
+  .mb-dim {
+    display: none;
+  }
+
 }
-@media all and (max-width: 700px) {   
+
+@media all and (max-width: 700px) {
   .logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
   .header-top {
     display: none;
   }
+
   .header-main {
     height: 81px;
   }
+
   .gnb {
     display: none;
   }
+
+  .mb-bt {
+    display: block;
+  }
+
 }
 
 /* visual */
