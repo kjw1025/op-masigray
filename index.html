@@ -1,457 +1,495 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마시그래이</title>
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마시그래이</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scrip.js"></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="js/swiper/swiper.min.css">
-  <script src="js/swiper/swiper.min.js"></script>
+  <body>
+    <!-- modal popup -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <!-- top -->
+        <div class="modal-top">
+          <h2 class="modal-title">마시그래이 클론코딩</h2>
+          <ul>
+            <li>
+              이 사이트는 <span>📚 스터디용</span>으로 제작되었으며 리소스는
+              <span>원작자</span>에게 있습니다.
+            </li>
+            <li>
+              해당 사이트 관련 문제사항 또는 문의사항이 있다면, <br />
+              <span class="modal-email">art.1025p@gmail.com</span> 으로 연락해
+              주세요 :)
+            </li>
+          </ul>
+        </div>
+        <!-- middle -->
+        <div class="modal-middle">
+          <h3 class="modal-subTitle">수정 및 개선사항</h3>
+          <ul>
+            <li>
+              1. favicon 제작 및 적용하였습니다. 롤오버시 포커스 유지 기능을
+              추가하였습니다.
+            </li>
+            <li>2. 모바일 메뉴 리스트 조금 더 부드럽게 제작하였습니다.</li>
+            <li>2. 메타 태그를 통한 검색엔진 최적화 진행하였습니다.</li>
+          </ul>
+        </div>
+        <!-- bottom -->
+        <div class="modal-bottom">
+          <p>본 사이트는 <span>Chrome</span>에 최적화되어 있습니다.</p>
+          <button class="modal-close">Close</button>
+        </div>
+      </div>
+    </div>
+    <!-- // modal popup -->
 
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/scrip.js"></script>
-</head>
+    <!-- 위로가기 -->
+    <button class="gotop"></button>
 
-<body>
+    <!-- 모바일 메뉴 -->
+    <a href="#" class="mb-bt">
+      <span></span>
+    </a>
+    <!-- 모바일 가림막 -->
+    <div class="mb-dim"></div>
+    <!-- 모바일 메뉴내용 -->
+    <div class="mb-wrap">
+      <a href="#" class="mb-close"></a>
 
-  <!-- 위로가기 -->
-  <button class="gotop"></button>
+      <div class="mb-sns">
+        <ul class="mb-sns-list clearfix">
+          <li>
+            <a href="#"><img src="images/sns_blog.png" alt="blog" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns_insta.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns_facebook.png" alt="facebook" /></a>
+          </li>
+        </ul>
+      </div>
 
-  <!-- 모바일 메뉴 -->
-  <a href="#" class="mb-bt">
-    <span></span>
-  </a>
-  <!-- 모바일 가림막 -->
-  <div class="mb-dim"></div>
-  <!-- 모바일 메뉴내용 -->
-  <div class="mb-wrap">
+      <ul class="mb-menu">
+        <li>
+          <a href="#">마시그래이</a>
+          <ul class="mb-submenu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">CEO인사말</a></li>
+            <li><a href="#">BI / 비전</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴</a>
+          <ul class="mb-submenu">
+            <li><a href="#">신메뉴</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">디저트</a></li>
+            <li><a href="#">MD상품</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">프랜차이즈</a>
+          <ul class="mb-submenu">
+            <li><a href="#">가맹안내</a></li>
+            <li><a href="#">가맹절차</a></li>
+            <li><a href="#">매장인테리어</a></li>
+            <li><a href="#">커피 아카데미</a></li>
+            <li><a href="#">가맹상담신청</a></li>
+          </ul>
+        </li>
 
-    <a href="#" class="mb-close"></a>
+        <li>
+          <a href="#">매장안내</a>
+          <ul class="mb-submenu">
+            <li><a href="#">매장안내</a></li>
+          </ul>
+        </li>
 
-    <div class="mb-sns">
-      <ul class="mb-sns-list clearfix">
-        <li><a href="#"><img src="images/sns_blog.png" alt="blog"></a></li>
-        <li><a href="#"><img src="images/sns_insta.png" alt="instagram"></a></li>
-        <li><a href="#"><img src="images/sns_facebook.png" alt="facebook"></a></li>
+        <li>
+          <a href="#">공지사항</a>
+          <ul class="mb-submenu">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">고객의소리</a>
+          <ul class="mb-submenu">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Q&amp;A</a></li>
+            <li><a href="#">케이터링</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 
-    <ul class="mb-menu">
-      <li>
-        <a href="#">마시그래이</a>
-        <ul class="mb-submenu">
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#">연혁</a></li>
-          <li><a href="#">CEO인사말</a></li>
-          <li><a href="#">BI / 비전</a></li>
-          <li><a href="#">오시는길</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">메뉴</a>
-        <ul class="mb-submenu">
-          <li><a href="#">신메뉴</a></li>
-          <li><a href="#">커피</a></li>
-          <li><a href="#">음료</a></li>
-          <li><a href="#">디저트</a></li>
-          <li><a href="#">MD상품</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">프랜차이즈</a>
-        <ul class="mb-submenu">
-          <li><a href="#">가맹안내</a></li>
-          <li><a href="#">가맹절차</a></li>
-          <li><a href="#">매장인테리어</a></li>
-          <li><a href="#">커피 아카데미</a></li>
-          <li><a href="#">가맹상담신청</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="#">매장안내</a>
-        <ul class="mb-submenu">
-          <li><a href="#">매장안내</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="#">공지사항</a>
-        <ul class="mb-submenu">
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">이벤트</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="#">고객의소리</a>
-        <ul class="mb-submenu">
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Q&amp;A</a></li>
-          <li><a href="#">케이터링</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-
-  <!-- 오른쪽 고정메뉴 -->
-  <div class="fix-menu">
-    <a href="#"><img src="images/fix_1.png" alt="케이터링"></a>
-    <a href="#"><img src="images/fix_2.png" alt="창업안내"></a>
-    <a href="#"><img src="images/fix_3.png" alt="전화상담"></a>
-    <a href="#"><img src="images/fix_4.png" alt="고객상담"></a>
-  </div>
-  <!-- 전체 레이아웃 -->
-  <div class="wrap">
-    <!-- header -->
-    <header class="header">
-      <div class="inner">
-
-        <div class="header-top clearfix">
-          <ul class="h-sns-list">
-            <li><a href="#" class="icon-bg">blog</a></li>
-            <li><a href="#" class="icon-is">instagram</a></li>
-            <li><a href="#" class="icon-fb">facebook</a></li>
-          </ul>
-        </div>
-
-        <div class="header-main clearfix">
-          <a href="index.html" class="logo">마시그래이</a>
-
-          <div class="gnb">
-            <ul class="menu">
-              <li>
-                <a href="#">마시그래이</a>
-                <ul class="submenu">
-                  <li><a href="#">회사소개</a></li>
-                  <li><a href="#">연혁</a></li>
-                  <li><a href="#">CEO인사말</a></li>
-                  <li><a href="#">BI / 비전</a></li>
-                  <li><a href="#">오시는길</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">메뉴</a>
-                <ul class="submenu">
-                  <li><a href="#">신메뉴</a></li>
-                  <li><a href="#">커피</a></li>
-                  <li><a href="#">음료</a></li>
-                  <li><a href="#">디저트</a></li>
-                  <li><a href="#">MD상품</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">프랜차이즈</a>
-                <ul class="submenu">
-                  <li><a href="#">가맹안내</a></li>
-                  <li><a href="#">가맹절차</a></li>
-                  <li><a href="#">매장인테리어</a></li>
-                  <li><a href="#">커피 아카데미</a></li>
-                  <li><a href="#">가맹상담신청</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">매장안내</a>
-                <ul class="submenu">
-                  <li><a href="#">매장안내</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">공지사항</a>
-                <ul class="submenu">
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">이벤트</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#">고객의소리</a>
-                <ul class="submenu">
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Q&amp;A</a></li>
-                  <li><a href="#">케이터링</a></li>
-                </ul>
-              </li>
+    <!-- 오른쪽 고정메뉴 -->
+    <div class="fix-menu">
+      <a href="#"><img src="images/fix_1.png" alt="케이터링" /></a>
+      <a href="#"><img src="images/fix_2.png" alt="창업안내" /></a>
+      <a href="#"><img src="images/fix_3.png" alt="전화상담" /></a>
+      <a href="#"><img src="images/fix_4.png" alt="고객상담" /></a>
+    </div>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="inner">
+          <div class="header-top clearfix">
+            <ul class="h-sns-list">
+              <li><a href="#" class="icon-bg">blog</a></li>
+              <li><a href="#" class="icon-is">instagram</a></li>
+              <li><a href="#" class="icon-fb">facebook</a></li>
             </ul>
           </div>
 
+          <div class="header-main clearfix">
+            <a href="index.html" class="logo">마시그래이</a>
 
-        </div>
+            <div class="gnb">
+              <ul class="menu">
+                <li>
+                  <a href="#">마시그래이</a>
+                  <ul class="submenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">CEO인사말</a></li>
+                    <li><a href="#">BI / 비전</a></li>
+                    <li><a href="#">오시는길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">메뉴</a>
+                  <ul class="submenu">
+                    <li><a href="#">신메뉴</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">디저트</a></li>
+                    <li><a href="#">MD상품</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">프랜차이즈</a>
+                  <ul class="submenu">
+                    <li><a href="#">가맹안내</a></li>
+                    <li><a href="#">가맹절차</a></li>
+                    <li><a href="#">매장인테리어</a></li>
+                    <li><a href="#">커피 아카데미</a></li>
+                    <li><a href="#">가맹상담신청</a></li>
+                  </ul>
+                </li>
 
+                <li>
+                  <a href="#">매장안내</a>
+                  <ul class="submenu">
+                    <li><a href="#">매장안내</a></li>
+                  </ul>
+                </li>
 
+                <li>
+                  <a href="#">공지사항</a>
+                  <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                  </ul>
+                </li>
 
-
-
-      </div>
-    </header>
-    <!-- visual -->
-    <section class="visual">
-      <div class="swiper-container sw-visual">
-        <!-- 슬라이드 내용 -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="sw-visual-1"></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="sw-visual-2"></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="sw-visual-3"></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="sw-visual-4"></a>
-          </div>
-        </div>
-        <!-- 슬라이드 좌우버튼 -->
-        <button class="sw-visual-prev"></button>
-        <button class="sw-visual-next"></button>
-      </div>
-    </section>
-    <!-- items -->
-    <section class="items">
-      <div class="inner clearfix">
-        <div class="items-box">
-          <img src="images/mb01_img.png" alt="">
-
-          <span class="bar"></span>
-
-          <a href="#">
-            <h3>브랜드 스토리</h3>
-            <p>
-              마시그래이는 표준어로 '마셔라' 라는 <br>
-              사투리의 표현을 가져온 것으로 브랜드네임에서부터 <br>
-              고객에게 친밀하게 다가가고자 하는 마음을 담았습니다.
-            </p>
-          </a>
-        </div>
-        <div class="items-box">
-
-          <!-- item 슬라이드 -->
-          <div class="swiper-container sw-items">
-            <!-- 기본형 : 슬라이드 내용 -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#" class="items-1"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="items-2"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="items-3"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="items-4"></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="items-5"></a>
-              </div>
+                <li>
+                  <a href="#">고객의소리</a>
+                  <ul class="submenu">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Q&amp;A</a></li>
+                    <li><a href="#">케이터링</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-
-            <!-- 이동버튼 -->
-            <button class="sw-items-prev"></button>
-            <button class="sw-items-next"></button>
-
-            <!-- 콘트롤 -->
-            <div class="sw-items-control">
-              <!-- Pagination -->
-              <div class="sw-items-pg"></div>
-            </div>
-
           </div>
-
         </div>
-        <div class="items-box">
-          <a href="#">
-            <h3>창업절차</h3>
-            <p>체계적인 마시그래이의 <br>
-              창업시스템에 대해 알아보세요.
-            </p>
-          </a>
-          <a href="#">
-            <h3>창업문의</h3>
-            <p>차별화된 Take-out 브랜드<br>
-              마시그래이에 대해 알아보세요.
-            </p>
-          </a>
-        </div>
-        <div class="items-box">
-
-          <div class="search-left">
-          </div>
-
-          <div class="search">
-
-            <h2>
-              STORE
-            </h2>
-
-            <h3>
-              매장
-            </h3>
-
-            <p>
-              가까운 마시그래이 매장을 <br>
-              찾아보세요
-            </p>
-
-            <form action="" id="search-form" class="search-form">
-              <label for="shop">지점명</label>
-              <input type="text" name="shop" id="shop" class="shop">
-              <input type="submit" class="search-bt">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- bevarage -->
-    <section class="bevarage">
-      <div class="inner">
-
-        <div class="bevarage-top">
-          <h2>MASIGRAY <b>MENU</b></h2>
-          <span>마시그래이의 다양한 메뉴를 맛보세요</span>
-        </div>
-        <!-- Bevarage 슬라이드  -->
-        <div class="swiper-container sw-bevarage">
+      </header>
+      <!-- visual -->
+      <section class="visual">
+        <div class="swiper-container sw-visual">
           <!-- 슬라이드 내용 -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#">
-                <img src="images/menu_slide01.png" alt="">
-              </a>
+              <a href="#" class="sw-visual-1"></a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
-                <img src="images/menu_slide02.png" alt="">
-              </a>
+              <a href="#" class="sw-visual-2"></a>
             </div>
             <div class="swiper-slide">
-              <a href="#">
-                <img src="images/menu_slide03.png" alt="">
-              </a>
+              <a href="#" class="sw-visual-3"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sw-visual-4"></a>
             </div>
           </div>
-          <!-- 좌우 버튼 -->
-          <button class="sw-bevarage-prev"></button>
-          <button class="sw-bevarage-next"></button>
-          <!-- 콘트롤 -->
-          <div class="sw-bevarage-cotrol">
-            <div class="sw-bevarage-pg"></div>
+          <!-- 슬라이드 좌우버튼 -->
+          <button class="sw-visual-prev"></button>
+          <button class="sw-visual-next"></button>
+        </div>
+      </section>
+      <!-- items -->
+      <section class="items">
+        <div class="inner clearfix">
+          <div class="items-box">
+            <img src="images/mb01_img.png" alt="" />
+
+            <span class="bar"></span>
+
+            <a href="#">
+              <h3>브랜드 스토리</h3>
+              <p>
+                마시그래이는 표준어로 '마셔라' 라는 <br />
+                사투리의 표현을 가져온 것으로 브랜드네임에서부터 <br />
+                고객에게 친밀하게 다가가고자 하는 마음을 담았습니다.
+              </p>
+            </a>
+          </div>
+          <div class="items-box">
+            <!-- item 슬라이드 -->
+            <div class="swiper-container sw-items">
+              <!-- 기본형 : 슬라이드 내용 -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="items-1"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-2"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-3"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-4"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-5"></a>
+                </div>
+              </div>
+
+              <!-- 이동버튼 -->
+              <button class="sw-items-prev"></button>
+              <button class="sw-items-next"></button>
+
+              <!-- 콘트롤 -->
+              <div class="sw-items-control">
+                <!-- Pagination -->
+                <div class="sw-items-pg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <a href="#">
+              <h3>창업절차</h3>
+              <p>
+                체계적인 마시그래이의 <br />
+                창업시스템에 대해 알아보세요.
+              </p>
+            </a>
+            <a href="#">
+              <h3>창업문의</h3>
+              <p>
+                차별화된 Take-out 브랜드<br />
+                마시그래이에 대해 알아보세요.
+              </p>
+            </a>
+          </div>
+          <div class="items-box">
+            <div class="search-left"></div>
+
+            <div class="search">
+              <h2>STORE</h2>
+
+              <h3>매장</h3>
+
+              <p>
+                가까운 마시그래이 매장을 <br />
+                찾아보세요
+              </p>
+
+              <form action="" id="search-form" class="search-form">
+                <label for="shop">지점명</label>
+                <input type="text" name="shop" id="shop" class="shop" />
+                <input type="submit" class="search-bt" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- bevarage -->
+      <section class="bevarage">
+        <div class="inner">
+          <div class="bevarage-top">
+            <h2>MASIGRAY <b>MENU</b></h2>
+            <span>마시그래이의 다양한 메뉴를 맛보세요</span>
+          </div>
+          <!-- Bevarage 슬라이드  -->
+          <div class="swiper-container sw-bevarage">
+            <!-- 슬라이드 내용 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu_slide01.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu_slide02.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu_slide03.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- 좌우 버튼 -->
+            <button class="sw-bevarage-prev"></button>
+            <button class="sw-bevarage-next"></button>
+            <!-- 콘트롤 -->
+            <div class="sw-bevarage-cotrol">
+              <div class="sw-bevarage-pg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- franchiser -->
+      <section class="franchiser">
+        <div class="inner">
+          <div class="franchiser-top">
+            <h2>MASIGRAY <b>Franchiser</b></h2>
+            <span>마시그래이 신규 매장</span>
           </div>
 
+          <ul class="franchiser-list clearfix">
+            <li>
+              <a href="#">
+                <img src="images/shop1.jpg" alt="" />
+                <span>합천점</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="images/shop2.jpg" alt="" />
+                <span>신천점</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="images/shop3.jpg" alt="" />
+                <span>복현푸르지오점</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="images/shop4.jpg" alt="" />
+                <span>대곡점</span>
+              </a>
+            </li>
+          </ul>
         </div>
-
-      </div>
-    </section>
-    <!-- franchiser -->
-    <section class="franchiser">
-      <div class="inner">
-
-        <div class="franchiser-top">
-          <h2>MASIGRAY <b>Franchiser</b></h2>
-          <span>마시그래이 신규 매장</span>
+      </section>
+      <!-- sns -->
+      <section class="sns">
+        <div class="inner">
+          <div class="sns-top">
+            <h2>MASIGRAY <b>SNS</b></h2>
+            <span>#masigray</span>
+          </div>
         </div>
+      </section>
 
-        <ul class="franchiser-list clearfix">
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <ul class="footer-menu clearfix">
+            <li><a href="#">점주의 방</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">가맹문의</a></li>
+            <li><a href="#">고객의 소리</a></li>
+          </ul>
 
-          <li>
-            <a href="#">
-              <img src="images/shop1.jpg" alt="">
-              <span>합천점</span>
-            </a>
-          </li>
+          <hr />
 
-          <li>
-            <a href="#">
-              <img src="images/shop2.jpg" alt="">
-              <span>신천점</span>
-            </a>
-          </li>
+          <a href="#" class="footer-logo">
+            <img src="images/f_logo.png" alt="마시그래이" />
+          </a>
 
-          <li>
-            <a href="#">
-              <img src="images/shop3.jpg" alt="">
-              <span>복현푸르지오점</span>
-            </a>
-          </li>
+          <hr />
 
-          <li>
-            <a href="#">
-              <img src="images/shop4.jpg" alt="">
-              <span>대곡점</span>
-            </a>
-          </li>
+          <p class="footer-copy">
+            (주) 에스이엠 <i class="bar"></i> 사업자등록번호 : 502 - 86 - 32017
+            <i class="bar"></i> 대표이사 : 정영주 <br />
+            주소 : 대구광역시 수성구 만촌동 957-2번지 2층
+            <i class="bar"></i> 전화 : 1899-2087 <i class="bar"></i> 팩스 :
+            053-474-9522
+          </p>
 
-        </ul>
+          <hr />
 
-      </div>
-    </section>
-    <!-- sns -->
-    <section class="sns">
-      <div class="inner">
-        <div class="sns-top">
-          <h2>MASIGRAY <b>SNS</b></h2>
-          <span>#masigray</span>
+          <ul class="footer-sns clearfix">
+            <li>
+              <a href="#"><img src="images/f_sns_1.png" alt="blog" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/f_sns_2.png" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/f_sns_3.png" alt="facebook" /></a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="inner">
-
-        <ul class="footer-menu clearfix">
-          <li><a href="#">점주의 방</a></li>
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#">개인정보취급방침</a></li>
-          <li><a href="#">이메일무단수집거부</a></li>
-          <li><a href="#">가맹문의</a></li>
-          <li><a href="#">고객의 소리</a></li>
-        </ul>
-
-        <hr>
-
-        <a href="#" class="footer-logo">
-          <img src="images/f_logo.png" alt="마시그래이">
-        </a>
-
-        <hr>
-
-        <p class="footer-copy">
-          (주) 에스이엠 <i class="bar"></i> 사업자등록번호 : 502 - 86 - 32017 <i class="bar"></i> 대표이사 : 정영주 <br>
-          주소 : 대구광역시 수성구 만촌동 957-2번지 2층 <i class="bar"></i> 전화 : 1899-2087 <i class="bar"></i> 팩스 : 053-474-9522
-        </p>
-
-        <hr>
-
-        <ul class="footer-sns clearfix">
-          <li><a href="#"><img src="images/f_sns_1.png" alt="blog"></a></li>
-          <li><a href="#"><img src="images/f_sns_2.png" alt="instagram"></a></li>
-          <li><a href="#"><img src="images/f_sns_3.png" alt="facebook"></a></li>
-        </ul>
-
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
